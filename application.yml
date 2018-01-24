@@ -1,0 +1,11 @@
+# Context path configuration for all OCP UI projects.
+ocp:
+  ocp-ui:
+    context-path: ocp-ui   
+---
+spring.profiles: eureka-client
+# propagate application status to Eureka
+eureka:
+  client:
+    healthcheck:
+      enabled: true
