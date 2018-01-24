@@ -1,3 +1,5 @@
+# Override default configurations or Add more configurations for OCP PROJECTS
+
 # Context path configuration for all OCP UI projects.
 ocp:
   ocp-ui:
