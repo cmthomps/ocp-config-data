@@ -11,6 +11,9 @@ eureka:
   client:
     healthcheck:
       enabled: true
+
+# NOTE  Above configuration Data is for Default Sharing Configuration With All Applications
+#       Following configuration Data is for Each Server Environments
 ---
 spring.profiles: oauth2-resource-default
 security:
@@ -33,24 +36,3 @@ security:
                          JwIDAQAB
                          -----END PUBLIC KEY-----
 ---
-spring.profiles: mysql
-spring:
-  datasource:
-    driver-class-name: com.mysql.jdbc.Driver
-    validation-query: select 1
-    test-on-borrow: true
-    test-on-return: true
-    test-while-idle: true
-    time-between-eviction-runs-millis: 1800000
-    num-tests-per-eviction-run: 3
-    min-evictable-idle-time-millis: 1800000
-  jpa:
-    properties:
-      hibernate:
-        dialect: org.hibernate.dialect.MySQL5InnoDBDialect
-        hbm2ddl:
-          auto: validate
-    hibernate:
-      ddl-auto: none
-      naming-strategy: org.hibernate.cfg.ImprovedNamingStrategy
-    show-sql: false
