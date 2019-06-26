@@ -11,7 +11,7 @@ zuul:
       url: http://ocp-ui.ocp.com:3000/
     c2s-sof-ui:
       path: /c2s-sof-ui/**
-      url: http://c2s-sof-ui.ocp.com:9001/
+      url: http://c2s-sof-ui.ocp.com:9000/
     c2s-sof-api:
       path: /c2s-sof-api/**
       sensitiveHeaders: Cookie,Set-Cookie
